@@ -21,7 +21,7 @@
   .stat { flex:1; padding:4px 8px 4px; border-left:1px solid #b9b096; }
   .stat:first-child { border-left:none; padding-left:2px; }
   .stat .n { font-size:29px; font-weight:bold; line-height:1.05; }
-  .stat .d { font-family: Arial, Helvetica, sans-serif; font-size:9.3px; color:#45422f; margin-top:1px; line-height:1.25; }
+  .stat .d { font-family: Arial, Helvetica, sans-serif; font-size:9.3px; color:#35321e; margin-top:1px; line-height:1.25; }
   /* region bar */
   .regions { display:flex; margin-top:6px; height:20px; font-family: Arial, Helvetica, sans-serif; font-size:10.5px; font-weight:bold; color:#fff; }
   .regions div { display:flex; align-items:center; justify-content:center; }
@@ -42,7 +42,7 @@
   .cl { color:#b3541e; border-color:#b3541e; }
   .rp { color:#8a6d1e; border-color:#8a6d1e; }
   .hero h2 { font-size:19.5px; line-height:1.12; padding:2px 8px 0; font-weight:bold; }
-  .hero .dek { font-size:11.5px; line-height:1.3; padding:2px 8px 6px; color:#33301f; }
+  .hero .dek { font-size:12px; line-height:1.3; padding:2px 8px 6px; color:#33301f; }
   .smalls { display:flex; gap:6px; margin-top:6px; }
   .small { flex:1; border:1.5px solid #8f8a76; background:#fdfaf0; display:flex; flex-direction:column; overflow:hidden; }
   .small .band { font-size:10.8px; padding:3px 6px; }
@@ -51,26 +51,26 @@
   .small .nbadge { width:13px; height:13px; font-size:9px; }
   .small .chip { font-size:6.8px; padding:1px 3.5px; }
   .small h3 { font-size:14.6px; line-height:1.16; padding:2px 6px 0; font-weight:bold; }
-  .small .dek { font-size:10.3px; line-height:1.3; padding:1.5px 6px 5px; color:#33301f; }
+  .small .dek { font-size:10.8px; line-height:1.3; padding:1.5px 6px 5px; color:#33301f; }
   /* bottom */
   .bottom { display:flex; gap:8px; margin-top:6px; }
   .mapbox { width:388px; flex:none; border:1.5px solid #8f8a76; background:#fdfaf0; padding:5px 7px 4px; }
   .mapbox h4, .alsobox h4 { font-family: Arial, Helvetica, sans-serif; font-size:11.5px; letter-spacing:1.2px; font-weight:bold; }
-  .mapbox .cap { font-size:9.8px; font-style:italic; color:#45422f; margin-top:2px; }
+  .mapbox .cap { font-size:9.8px; font-style:italic; color:#35321e; margin-top:2px; }
   .alsobox { flex:1; border:1.5px solid #8f8a76; background:#fdfaf0; padding:5px 9px 4px; }
   .alsobox h4 span { color:#b3231b; }
   .alsocols { display:flex; gap:14px; margin-top:3px; }
   .alsocols ul { list-style:none; flex:1; }
-  .alsocols li { font-size:11px; line-height:1.3; padding:1.1px 0; white-space:nowrap; }
+  .alsocols li { font-size:11.5px; line-height:1.3; padding:1.1px 0; white-space:nowrap; }
   .alsocols .no { font-family: Arial, Helvetica, sans-serif; font-weight:bold; font-size:11px; }
-  .alsocols .src2 { color:#8a8570; font-size:10px; }
+  .alsocols .src2 { color:#4f4a3f; font-size:10px; }
   .alsocols .chip { margin-left:4px; font-size:6.6px; padding:.5px 3px; vertical-align:1.5px; }
   /* date check + footer */
   .datecheck { border:1.6px solid #b3231b; margin-top:6px; padding:4px 9px 5px; font-size:10.2px; line-height:1.36; background:#fdfaf0; }
   .datecheck b { color:#b3231b; font-family: Arial, Helvetica, sans-serif; font-size:10.5px; letter-spacing:1px; }
   .datecheck .open { font-weight:bold; }
-  .footer { margin-top:auto; border-top:1px solid #b9b096; padding-top:3px; display:flex; justify-content:space-between; font-size:9.3px; color:#45422f; }
-  .legend { font-size:9.3px; color:#45422f; margin-top:1px; }
+  .footer { margin-top:auto; border-top:1px solid #b9b096; padding-top:3px; display:flex; justify-content:space-between; font-size:9.3px; color:#35321e; }
+  .legend { font-size:9.3px; color:#35321e; margin-top:1px; }
   .legend b { font-family: Arial, Helvetica, sans-serif; font-size:8.8px; letter-spacing:.6px; }
 </style>
 </head>
@@ -359,9 +359,12 @@
       <div class="art" style="height:54px;">
         <svg viewBox="0 0 193 67" preserveAspectRatio="none">
           <rect width="193" height="67" fill="#e3e9e4"/>
-          <rect x="6" y="34" width="70" height="29" fill="#6b7c8c"/>
-          <polygon points="2,34 80,34 41,22" fill="#4c5c6a"/>
-          <g fill="#e9e2cd"><rect x="13" y="38" width="4.5" height="25"/><rect x="25" y="38" width="4.5" height="25"/><rect x="37" y="38" width="4.5" height="25"/><rect x="49" y="38" width="4.5" height="25"/><rect x="61" y="38" width="4.5" height="25"/></g>
+          <path d="M31 36 A10 10 0 0 1 51 36 Z" fill="#4c5c6a"/>
+          <rect x="30" y="36" width="22" height="7" fill="#6b7c8c"/>
+          <rect x="28" y="43" width="26" height="2.5" fill="#4c5c6a"/>
+          <rect x="4" y="45.5" width="74" height="17.5" fill="#6b7c8c"/>
+          <g fill="#e9e2cd"><rect x="9" y="49" width="3.5" height="3.5"/><rect x="16" y="49" width="3.5" height="3.5"/><rect x="23" y="49" width="3.5" height="3.5"/><rect x="56" y="49" width="3.5" height="3.5"/><rect x="63" y="49" width="3.5" height="3.5"/><rect x="70" y="49" width="3.5" height="3.5"/><rect x="9" y="55.5" width="3.5" height="3.5"/><rect x="16" y="55.5" width="3.5" height="3.5"/><rect x="23" y="55.5" width="3.5" height="3.5"/><rect x="56" y="55.5" width="3.5" height="3.5"/><rect x="63" y="55.5" width="3.5" height="3.5"/><rect x="70" y="55.5" width="3.5" height="3.5"/></g>
+          <rect x="2" y="60" width="78" height="3" fill="#4c5c6a"/>
           <g transform="rotate(-5 97 34)">
             <rect x="85" y="17" width="24" height="33" fill="#fdfdf6" stroke="#c9c2ac"/>
             <line x1="89" y1="25" x2="105" y2="25" stroke="#9a927c" stroke-width="1.6"/>
